@@ -1,2 +1,6 @@
-package com.mursalin;public class Accounts {
+package com.mursalin;
+
+public class Accounts {
+
+    
 }
