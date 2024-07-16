@@ -28,11 +28,11 @@
 
                 <p style = " font-size : 26px; font-weight: bold;" >If you've come here for the first time, then you can</p>
 
-                <button class = "bttn" onclick="location.href = 'SignInPage.jsp'">create new account</a></button>
+                <button class = "bttn" onclick="location.href = 'NewAccount.jsp'">create new account</a></button>
 
                 <p style = " font-size : 26px; font-weight: bold;" >or you can</p>
 
-                <button class = "bttn" onclick="location.href = 'SignInPage.jsp'">sign in</button>
+                <button class = "bttn" onclick="location.href = 'SignInForm.jsp'">sign in</button>
 
             </div>
 

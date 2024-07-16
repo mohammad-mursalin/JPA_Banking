@@ -24,6 +24,13 @@
       <version>5.4.32.Final</version>
     </dependency>
 
+    <!-- Hibernate Validator Dependency -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>6.2.0.Final</version>
+    </dependency>
+
     <!-- PostgreSQL Driver -->
     <dependency>
       <groupId>org.postgresql</groupId>

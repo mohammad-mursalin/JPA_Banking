@@ -1,6 +1,6 @@
-<%@ page import="com.AllAccounts" %>
+<%@ page import="com.mursalin.Accounts" %>
 <%@ page import="org.hibernate.Session" %>
-<%@ page import="com.FactoryProvider" %>
+<%@ page import="com.mursalin.FactoryProvider" %>
 <%@ page import="org.hibernate.Transaction" %>
 <%@ page import="java.util.List" %>
 <%@ page import="org.hibernate.query.Query" %>
@@ -19,7 +19,7 @@
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        AllAccounts account = null;
+        Accounts account = null;
 
         try {
             Session hSession = FactoryProvider.getFactory().openSession();
@@ -28,7 +28,7 @@
             Query q = hSession.createQuery("from AllAccounts where email = :email");
             q.setParameter("email", email);
 
-            account = (AllAccounts) q.uniqueResult();
+            account = (Accounts) q.uniqueResult();
             tr.commit();
             hSession.close();
 

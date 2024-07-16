@@ -1,6 +1,6 @@
 body{
 
-    ;
+
 }
 .nav-color {
 
@@ -32,7 +32,8 @@ body{
 .container {
     background-color: #90A4AE;
     width : 70%;
-
+    height : 100vh;
+    text-align: center;
     padding: 0;
 }
 
@@ -57,6 +58,38 @@ body{
 
 .bttn:hover {
          background-color: #A1887F; /* Change color on hover */
-     }
+}
+
+.createAccountForm{
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.signInAccountForm {
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.CA-form-content{
+    background-color: #757575 ;
+    width : 50% ;
+    border: 2px solid #000;
+    padding: 20px;
+
+}
+
+.signIn-form-content{
+    background-color: #757575 ;
+    width : 50% ;
+    border: 2px solid #000;
+    padding: 20px;
+
+}
 
 

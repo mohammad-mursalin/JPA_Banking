@@ -37,8 +37,6 @@
     %>
     <h1> Sign in succesfull for <%= name %></h1><br>
 
-    <a href="videos.jsp">Go to Videos</a><br><br>
-
     <form action="index.jsp" method="post">
             <button type="submit">log out</button>
     </form>
