@@ -5,8 +5,8 @@ body{
 .nav-color {
 
      background: #009688;
-     width: 70%;
-     margin-left : 150px;
+     width: 100%;
+     margin: 0px;
  }
  .search-bar input[type="text"] {
      background-color: #8D6E63;
@@ -30,13 +30,13 @@ body{
  }
 
 .container {
-
-
+    background-color: #90A4AE;
+    width : 70%;
     }
 
 .img{
-    margin-left : 450px;
 
+    text-align: center;
 }
 
 .image{

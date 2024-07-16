@@ -10,7 +10,7 @@
 
     <div class = "container">
 
-        <%@ include file = "Navbar.jsp" %>
+        <%@ include file = "Navbar.jsp" %><br>
 
     <div class = "img">
 
@@ -18,7 +18,7 @@
 
     </div><br>
 
-    <div class = "content" style = "margin-left: 300px;">
+    <div class = "content" style = "text-align: center;">
 
         <p style = " font-size : 26px;" >Welcome to our Bank Management System</p>
 

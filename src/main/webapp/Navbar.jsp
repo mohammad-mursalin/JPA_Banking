@@ -14,7 +14,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light nav-color ">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">JPA-Bank</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,13 +24,13 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link " href="#">Features</a>
+                    <a class="nav-link " href="ShowBalance.jsp">Show balance</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="DepositeMoney.jsp">Deposite Money</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link " href="#">Disabled</a>
+                    <a class="nav-link " href="TransferBalance.jsp">Transfer Balance</a>
                 </li>
             </ul>
                 <form class="form-inline ml-auto">
