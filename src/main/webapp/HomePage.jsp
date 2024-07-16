@@ -12,7 +12,17 @@
 
         <%@ include file = "Navbar.jsp" %>
 
+    <div class = "img">
 
+    <img class = "image" src = "image/bank-online.png">
+
+    </div><br>
+
+    <div class = "content" style = "margin-left: 300px;">
+
+        <p style = " font-size : 26px;" >Welcome to our Bank Management System</p>
+
+        </div>
 
     </div>
 </body>

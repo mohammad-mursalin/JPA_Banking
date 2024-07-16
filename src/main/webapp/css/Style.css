@@ -1,17 +1,47 @@
 body{
 
-    background-color: #BCAAA4;
+    background-color: #B0BEC5;
 }
 .nav-color {
 
      background: #009688;
      width: 70%;
+     margin-left : 150px;
  }
- .container {
+ .search-bar input[type="text"] {
+     background-color: #8D6E63;
+     color: #9E9E9E; /* Adjust text color for contrast */
+     border: none; /* Remove default border */
+     padding: 5px; /* Add some padding */
+     border-radius: 3px 0 0 3px; /* Rounded corners */
+ }
 
-        display: flex;
-        justify-content: center;
+ search-button {
+     background-color: #8D6E63;
+     color: #263238;
+     border: none; /* Remove default border */
+     padding: 5px 10px; /* Add some padding */
+     border-radius: 0 3px 3px 0; /* Rounded corners */
+     cursor: pointer; /* Add pointer cursor */
+ }
+
+ .search-button:hover {
+     background-color: #A1887F; /* Change color on hover */
+ }
+
+.container {
+
 
     }
+
+.img{
+    margin-left : 450px;
+
+}
+
+.image{
+    max-width: 30%;
+
+}
 
 

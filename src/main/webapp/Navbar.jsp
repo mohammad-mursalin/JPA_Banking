@@ -33,6 +33,10 @@
                     <a class="nav-link " href="#">Disabled</a>
                 </li>
             </ul>
+                <form class="form-inline ml-auto">
+                                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn search-button my-2 my-sm-0" type="submit">Search</button>
+                            </form>
         </div>
     </nav>
 
