@@ -20,7 +20,8 @@
 
     <div class = "content" style = "text-align: center;">
 
-        <p style = " font-size : 26px;" >Welcome to our Bank Management System</p>
+        <p style = " font-size : 26px; font-weight: bold;" >Welcome to our Bank Management System</p>
+
 
         </div>
 
