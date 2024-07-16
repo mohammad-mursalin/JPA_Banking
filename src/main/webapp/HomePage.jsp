@@ -12,16 +12,29 @@
 
         <%@ include file = "Navbar.jsp" %><br>
 
-    <div class = "img">
+        <div class = "img">
 
-    <img class = "image" src = "image/bank-online.png">
+        <img class = "image" src = "image/bank-online.png">
 
-    </div><br>
+        </div><br>
 
-    <div class = "content" style = "text-align: center;">
+        <div class = "content" style = "text-align: center;">
 
-        <p style = " font-size : 26px; font-weight: bold;" >Welcome to our Bank Management System</p>
+            <p style = " font-size : 26px; font-weight: bold;" >Welcome to our Bank Management System</p>
 
+
+
+            <div class = "account-section">
+
+                <p style = " font-size : 26px; font-weight: bold;" >If you've come here for the first time, then you can</p>
+
+                <button class = "bttn" onclick="location.href = 'SignInPage.jsp'">create new account</a></button>
+
+                <p style = " font-size : 26px; font-weight: bold;" >or you can</p>
+
+                <button class = "bttn" onclick="location.href = 'SignInPage.jsp'">sign in</button>
+
+            </div>
 
         </div>
 

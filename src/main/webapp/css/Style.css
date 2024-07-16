@@ -1,6 +1,6 @@
 body{
 
-    background-color: #B0BEC5;
+    ;
 }
 .nav-color {
 
@@ -45,5 +45,18 @@ body{
     max-width: 30%;
 
 }
+
+.bttn {
+     font-size : 20px;
+     font-weight: bold;
+     background-color: #43A047;
+     color: #263238;
+     cursor: pointer; /* Add pointer cursor */
+     border: none;
+}
+
+.bttn:hover {
+         background-color: #A1887F; /* Change color on hover */
+     }
 
 
