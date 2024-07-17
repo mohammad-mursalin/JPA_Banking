@@ -23,7 +23,7 @@
                     <form  class = "signIn-form-content" action = "SignInAccount.jsp">
                             <div class="form-group">
                                 <label for="accountNumber">Account Number</label>
-                                <input type="text" name = "accountNum" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
+                                <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
                             </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
