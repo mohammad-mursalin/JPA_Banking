@@ -6,10 +6,24 @@ import javax.persistence.Persistence;
 
 public class EntityManagerProvider {
 
-    public void getEntityManager() {
+    public static EntityManagerFactory emf;
+    public static EntityManager em;
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
+    public static EntityManager getEntityManager() {
 
-        EntityManager em = emf.createEntityManager();
+        if(em == null) {
+            emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
+            em = emf.createEntityManager();
+        }
+        return em;
+    }
+
+    public static void closeEntityManager() {
+
+        if (em != null && em.isOpen()){
+            em.close();
+            emf.close();
+        }
+
     }
 }

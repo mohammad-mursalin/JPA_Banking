@@ -1,26 +1,28 @@
 package com.mursalin;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Accounts {
 
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private long acNumber;
     private String email;
     private String name;
     private String password;
-    private long acNumber;
 
     public Accounts() {
 
     }
 
-    public Accounts(String email, String name, String password, long acNumber) {
+    public Accounts(String email, String name, String password) {
         this.email = email;
         this.name = name;
         this.password = password;
-        this.acNumber = acNumber;
     }
 
     public String getEmail() {

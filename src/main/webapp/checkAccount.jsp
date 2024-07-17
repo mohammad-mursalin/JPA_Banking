@@ -1,6 +1,6 @@
 <%@ page import="com.mursalin.Accounts" %>
 <%@ page import="org.hibernate.Session" %>
-<%@ page import="com.mursalin.FactoryProvider" %>
+<%@ page import="com.mursalin.EntityManagerProvider" %>
 <%@ page import="org.hibernate.Transaction" %>
 <%@ page import="java.util.List" %>
 <%@ page import="org.hibernate.query.Query" %>
