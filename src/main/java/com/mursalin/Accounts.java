@@ -14,7 +14,6 @@ public class Accounts {
     private String email;
     private String name;
     private String password;
-    private double balance = 0;
 
     public Accounts() {
 
@@ -24,12 +23,6 @@ public class Accounts {
         this.email = email;
         this.name = name;
         this.password = password;
-    }
-
-    public Accounts(long acNumber, String password, double balance) {
-        this.balance = balance;
-        this.password = password;
-        this.acNumber = acNumber;
     }
 
     public String getEmail() {
@@ -64,11 +57,4 @@ public class Accounts {
         this.acNumber = acNumber;
     }
 
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
 }
