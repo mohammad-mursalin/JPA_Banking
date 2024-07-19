@@ -1,6 +1,8 @@
-<%@ page import="com.mursalin.Accounts" %>
+%@ page import="com.mursalin.Accounts" %>
+%@ page import="com.mursalin.Balance_Table" %>
 <%@ page import="javax.persistence.EntityManager" %>
-<%@ page import="com.mursalin.EntityManagerProvider" %>
+<%@ page import=" javax.persistence.Persistence" %>
+<%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -12,36 +14,38 @@
 <body>
 
 <%
-    String name = request.getParameter("name");
-    double email = Double.parseDouble(request.getParameter("balance"));
+    long accountNumber = Long.parseLong(request.getParameter("accountNumber"));
     String password = request.getParameter("password");
 
+    EntityManagerFactory emf = null;
     EntityManager em = null;
 
+    Balance_Table balance_table = null;
+
     try {
-        em = EntityManagerProvider.getEntityManager();
+        emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
+        em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        Accounts account = new Accounts(email, name, password);
-        em.persist(account);
+        balance_table = em.find(Balance_Table.class, accountNumber);
+
+        if (account != null && accountNumber == balance_table.getAccount_num() && password.equals(balance_table.getPassword())) {
+            out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
+            out.println("<p>Thanks for using our service sir...</p>");
+        } else {
+            out.println("<h1>Error logging in to your account</h1>");
+            out.println("<p>Invalid account number or password.</p>");
+        }
 
         em.getTransaction().commit();
-
-        out.println("<h1>Account created successfully!</h1>");
-        out.println("<p>Account ID: " + account.getAcNumber() + "</p>");
-
     } catch (Exception e) {
 
-        if (em != null && em.getTransaction().isActive()) {
-            em.getTransaction().rollback();
-        }
         e.printStackTrace();
-        out.println("<h1>Error creating account</h1>");
-
+        out.println("<h1>Error in showing balance</h1>");
     } finally {
-
         if (em != null) {
-            EntityManagerProvider.closeEntityManager();
+            em.close();
+            emf.close();
         }
     }
 %>

@@ -1,9 +1,6 @@
 package com.mursalin;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Accounts {
@@ -16,14 +13,17 @@ public class Accounts {
     private String password;
 
     public Accounts() {
-
     }
 
-    public Accounts(String email, String name, String password) {
+    public Accounts(long acNumber, String email, String name, String password) {
+        this.acNumber = acNumber;
         this.email = email;
         this.name = name;
         this.password = password;
+
     }
+
+
 
     public String getEmail() {
         return email;
@@ -56,5 +56,6 @@ public class Accounts {
     public void setAcNumber(long acNumber) {
         this.acNumber = acNumber;
     }
+
 
 }

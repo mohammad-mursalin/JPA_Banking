@@ -1,6 +1,8 @@
-<%@ page import="com.mursalin.Accounts" %>
+%@ page import="com.mursalin.Accounts" %>
+%@ page import="com.mursalin.Balance_Table" %>
 <%@ page import="javax.persistence.EntityManager" %>
-<%@ page import="com.mursalin.EntityManagerProvider" %>
+<%@ page import=" javax.persistence.Persistence" %>
+<%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -16,14 +18,24 @@
     String email = request.getParameter("email");
     String password = request.getParameter("password");
 
+    double balance = 0;
+
+    EntityManagerFactory emf = null;
     EntityManager em = null;
 
     try {
-        em = EntityManagerProvider.getEntityManager();
+        emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
+        em = emf.createEntityManager();
         em.getTransaction().begin();
 
         Accounts account = new Accounts(email, name, password);
+
+
         em.persist(account);
+
+        Balance_Table balance_table = new Balance_Table(account.getAcNumber(), password, balance);
+
+        em.persist(balance_table);
 
         em.getTransaction().commit();
 
@@ -41,7 +53,8 @@
     } finally {
 
         if (em != null) {
-            EntityManagerProvider.closeEntityManager();
+            em.close();
+            emf.close();
         }
     }
 %>
