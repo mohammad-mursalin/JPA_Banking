@@ -14,49 +14,63 @@
 <body>
 
 <%
-    long accountNumber = Long.parseLong(request.getParameter("accountNumber"));
+    long senderAccNum = Long.parseLong(request.getParameter("senderAccountNumber"));
     String password = request.getParameter("password");
     double amount = Double.parseDouble(request.getParameter("amount"));
+    long receiverAccNum = Long.parseLong(request.getParameter("receiverAccountNumber"));
 
     EntityManagerFactory emf = null;
     EntityManager em = null;
 
-    Balance_Table balance_table = null;
+    Balance_Table sender_balance_table = null;
+    Balance_Table receiver_balance_table = null;
 
     try {
         emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
         em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        balance_table = em.find(Balance_Table.class, accountNumber);
+        sender_balance_table = em.find(Balance_Table.class, senderAccNum);
+        receiver_balance_table = em.find(Balance_Table.class, receiverAccNum);
 
-        if (account != null && accountNumber == balance_table.getAccount_num() && password.equals(balance_table.getPassword())) {
+        if (sender_balance_table != null && senderAccNum == sender_balance_table.getAccount_num() && password.equals(sender_balance_table.getPassword())) {
 
-            if(balance_table.getBalance() > amount) {
+            if(receiver_balance_table != null && receiverAccNum == receiver_balance_table.getAccount_num()) {
 
-                out.println("<h1>Amount " +amount+ " is transferd from your account</h1>");
+                if(sender_balance_table.getBalance() > amount) {
 
-                balance_table.setBalance(balance_table.getBalance() - amount);
+                    out.println("<h1>Amount " +amount+ " is transferd from your account</h1>");
 
-                out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
-                out.println("<p>Thanks for using our service sir...</p>");
+                    sender_balance_table.setBalance(sender_balance_table.getBalance() - amount);
+                    receiver_balance_table.setBalance(receiver_balance_table.getBalance() + amount);
+
+                    out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
+                    out.println("<p>Thanks for using our service sir...</p>");
+
+                    em.getTransaction().commit();
+
+                } else {
+
+                    out.println("<h1>Insufficient balance !!!</h1>");
+                }
 
             } else {
 
-                out.println("<h1>Insufficient balance !!!</h1>");
+                out.println("<p>Invalid receiver account number.</p>");
             }
 
         } else {
 
-            out.println("<h1>Error logging in to your account</h1>");
             out.println("<p>Invalid account number or password.</p>");
         }
 
-        em.getTransaction().commit();
+
     } catch (Exception e) {
 
         e.printStackTrace();
-        out.println("<h1>Error in showing balance</h1>");
+        out.println("<h1>Error in transfering balance</h1>");
+        em.getTransaction().rollback();
+
     } finally {
         if (em != null) {
             em.close();
@@ -65,25 +79,5 @@
     }
 %>
 
-</body>
-</html>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <%@include file ="All_css_and_js.jsp"%>
-
-    <title>Form page : Home page</title>
-
-</head>
-<body>
-<div class = "container">
-
-        <%@ include file = "Navbar.jsp" %><br>
-
-    </div>
 </body>
 </html>
