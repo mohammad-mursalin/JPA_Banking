@@ -1,33 +1,30 @@
 body{
 
-
 }
 .nav-color {
-
      background: #009688;
      width: 100%;
-
  }
- .search-bar input[type="text"] {
+.search-bar input[type="text"] {
      background-color: #8D6E63;
-     color: #9E9E9E; /* Adjust text color for contrast */
-     border: none; /* Remove default border */
-     padding: 5px; /* Add some padding */
-     border-radius: 3px 0 0 3px; /* Rounded corners */
- }
+     color: #9E9E9E;
+     border: none;
+     padding: 5px;
+     border-radius: 3px 0 0 3px;
+}
 
- search-button {
+.search-button {
      background-color: #8D6E63;
      color: #263238;
      border: none; /* Remove default border */
-     padding: 5px 10px; /* Add some padding */
+     padding: 5px 10px;
      border-radius: 0 3px 3px 0; /* Rounded corners */
-     cursor: pointer; /* Add pointer cursor */
- }
+     cursor: pointer;
+}
 
- .search-button:hover {
+.search-button:hover {
      background-color: #A1887F; /* Change color on hover */
- }
+}
 
 .container {
     background-color: #90A4AE;
@@ -38,13 +35,11 @@ body{
 }
 
 .img{
-
     text-align: center;
 }
 
 .image{
     max-width: 30%;
-
 }
 
 .bttn {
@@ -57,39 +52,20 @@ body{
 }
 
 .bttn:hover {
-         background-color: #A1887F; /* Change color on hover */
+     background-color: #A1887F; /* Change color on hover */
 }
 
-.createAccountForm{
-
+.form-div {
     display:flex;
     justify-content: center;
     align-items:center;
-
 }
 
-.signInAccountForm {
-
-    display:flex;
-    justify-content: center;
-    align-items:center;
-
-}
-
-.CA-form-content{
+.form-body{
     background-color: #757575 ;
     width : 50% ;
     border: 2px solid #000;
     padding: 20px;
-
-}
-
-.signIn-form-content{
-    background-color: #757575 ;
-    width : 50% ;
-    border: 2px solid #000;
-    padding: 20px;
-
 }
 
 

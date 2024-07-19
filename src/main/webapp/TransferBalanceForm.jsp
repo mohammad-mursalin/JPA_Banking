@@ -18,9 +18,9 @@
 
         <p style = "font-size : 22px ; font-weight : bold;">Please provide the information to transfer money</p><br>
 
-        <div class = "createAccountForm" >
+        <div class = "form-div" >
 
-            <form  class = "CA-form-content" action = "TransferBalance.jsp" method = "post">
+            <form  class = ".form-body" action = "TransferBalance.jsp" method = "post">
                     <div class="form-group">
                         <label for="accountNumber">Sender Account Number</label>
                         <input type="text" class="form-control" id="accountNumber" name="senderAccountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>

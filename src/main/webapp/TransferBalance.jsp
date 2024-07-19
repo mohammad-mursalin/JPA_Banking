@@ -67,9 +67,11 @@
 
     } catch (Exception e) {
 
+        if (em != null && em.getTransaction().isActive()) {
+            em.getTransaction().rollback();
+        }
         e.printStackTrace();
         out.println("<h1>Error in transfering balance</h1>");
-        em.getTransaction().rollback();
 
     } finally {
         if (em != null) {

@@ -30,7 +30,6 @@
 
         Accounts account = new Accounts(email, name, password);
 
-
         em.persist(account);
 
         Balance_Table balance_table = new Balance_Table(account.getAcNumber(), password, balance);

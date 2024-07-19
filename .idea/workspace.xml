@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="sign in complete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ShowBalance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ShowBalance.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="transfer balance option added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,13 +142,67 @@
       <option name="project" value="LOCAL" />
       <updated>1721237466361</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working on show balance">
+      <option name="closed" value="true" />
+      <created>1721362081718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721362081718</updated>
+    </task>
+    <task id="LOCAL-00006" summary="show balance option added">
+      <option name="closed" value="true" />
+      <created>1721362242854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721362242854</updated>
+    </task>
+    <task id="LOCAL-00007" summary="working on deposite money option">
+      <option name="closed" value="true" />
+      <created>1721363666099</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721363666099</updated>
+    </task>
+    <task id="LOCAL-00008" summary="deposite money option added">
+      <option name="closed" value="true" />
+      <created>1721363689018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721363689018</updated>
+    </task>
+    <task id="LOCAL-00009" summary="amount reduced from one account">
+      <option name="closed" value="true" />
+      <created>1721364427746</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721364427746</updated>
+    </task>
+    <task id="LOCAL-00010" summary="transfer balance option added">
+      <option name="closed" value="true" />
+      <created>1721368197264</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721368197264</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create account and sign in account form" />
     <MESSAGE value="sign in and create account page" />
     <MESSAGE value="sign in complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in complete" />
+    <MESSAGE value="working on show balance" />
+    <MESSAGE value="show balance option added" />
+    <MESSAGE value="working on deposite money option" />
+    <MESSAGE value="deposite money option added" />
+    <MESSAGE value="amount reduced from one account" />
+    <MESSAGE value="transfer balance option added" />
+    <option name="LAST_COMMIT_MESSAGE" value="transfer balance option added" />
   </component>
 </project>

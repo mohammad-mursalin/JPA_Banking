@@ -18,9 +18,9 @@
 
         <p style = "font-size : 22px ; font-weight : bold;">Please provide the information to create a bank account</p><br>
 
-        <div class = "createAccountForm" >
+        <div class = "form-div" >
 
-            <form  class = "CA-form-content" action = "DepositeMoney.jsp" method = "post">
+            <form  class = ".form-body" action = "DepositeMoney.jsp" method = "post">
                     <div class="form-group">
                         <label for="accountNumber">Account Number</label>
                         <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
