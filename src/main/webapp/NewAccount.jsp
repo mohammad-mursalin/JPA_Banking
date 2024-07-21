@@ -20,7 +20,7 @@
 
         <div class = "createAccountForm" >
 
-            <form  class = "CA-form-content" action = "CreateAccount.jsp" method = "post">
+            <form  class = "CA-form-content" action = "checkAccount.jsp" method = "post">
                     <div class="form-group">
                           <label for="exampleInputName1">Owner Name</label>
                           <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Name" name = "name">

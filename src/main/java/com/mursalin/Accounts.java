@@ -6,17 +6,17 @@ import javax.persistence.*;
 public class Accounts {
 
     @Id
+    private String email;
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long acNumber;
-    private String email;
+
     private String name;
     private String password;
 
     public Accounts() {
     }
 
-    public Accounts(long acNumber, String email, String name, String password) {
-        this.acNumber = acNumber;
+    public Accounts(String email, String name, String password) {
         this.email = email;
         this.name = name;
         this.password = password;

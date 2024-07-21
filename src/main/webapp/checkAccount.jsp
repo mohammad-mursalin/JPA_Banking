@@ -1,9 +1,7 @@
-<%@ page import="com.mursalin.Accounts" %>
-<%@ page import="org.hibernate.Session" %>
-<%@ page import="com.mursalin.EntityManagerProvider" %>
-<%@ page import="org.hibernate.Transaction" %>
-<%@ page import="java.util.List" %>
-<%@ page import="org.hibernate.query.Query" %>
+%@ page import="com.mursalin.Accounts" %>
+<%@ page import="javax.persistence.EntityManager" %>
+<%@ page import=" javax.persistence.Persistence" %>
+<%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -16,38 +14,41 @@
 <body>
 
     <%
+        String name = request.getParameter("name");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
         Accounts account = null;
 
         try {
-            Session hSession = FactoryProvider.getFactory().openSession();
-            Transaction tr = hSession.beginTransaction();
+            emf = Persistence.createEntityManagerFactory("MursalinPersistenceUnit");
+            em = emf.createEntityManager();
 
-            Query q = hSession.createQuery("from AllAccounts where email = :email");
-            q.setParameter("email", email);
-
-            account = (Accounts) q.uniqueResult();
-            tr.commit();
-            hSession.close();
+            account = (Accounts) em.find(Accounts.class, email);
 
             if (account != null && email.equals(account.getEmail())) {
-                if (password.equals(account.getPassword())) {
-                    session.setAttribute("name", account.getName());
-                    response.sendRedirect("welcome.jsp");
-                } else {
-                    response.sendRedirect("retry.jsp");
-                }
+
+                    out.println("<h1>Already have an account with this email !</h1>");
+                    out.println("<h1>"+email+"</h1>");
+                    out.println("<h1>Please try with a different email !</h1>");
+
             } else {
+                request.setAttribute("name", name);
                 request.setAttribute("email", email);
-                RequestDispatcher rd = request.getRequestDispatcher("noAccount.jsp");
+                request.setAttribute("passwond", password);
+                RequestDispatcher rd = request.getRequestDispatcher("CreateAccount.jsp");
                 rd.forward(request, response);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        } finally {
+
+          if (em != null) {
+              em.close();
+              emf.close();
+          }
+      }
     %>
     <h1>Check Account page</h1>
 
