@@ -6,9 +6,10 @@ import javax.persistence.*;
 public class Accounts {
 
     @Id
-    private String email;
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long acNumber;
+
+    private String email;
 
     private String name;
     private String password;

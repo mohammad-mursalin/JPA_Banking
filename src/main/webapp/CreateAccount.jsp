@@ -1,8 +1,9 @@
-%@ page import="com.mursalin.Accounts" %>
-%@ page import="com.mursalin.Balance_Table" %>
+<%@ page import="com.mursalin.Accounts" %>
+<%@ page import="com.mursalin.Balance_Table" %>
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import=" javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManagerFactory" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">

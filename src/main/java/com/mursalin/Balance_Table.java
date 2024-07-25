@@ -9,13 +9,13 @@ public class Balance_Table {
     @Id
     private long account_num;
     private String password;
-    private String balance;
+    private double balance;
 
 
     public Balance_Table() {
     }
 
-    public Balance_Table(long account_num, String password, String balance) {
+    public Balance_Table(long account_num, String password, double balance) {
         this.account_num = account_num;
         this.password = password;
         this.balance = balance;
@@ -30,11 +30,11 @@ public class Balance_Table {
         this.password = password;
     }
 
-    public String getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(String balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

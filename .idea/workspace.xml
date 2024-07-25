@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="index page added and other codes improved">
+    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="check account before creating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/EntityManagerProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/Balance_Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mursalin/Balance_Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/checkAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkAccount.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721383573236</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="check account before creating">
+      <option name="closed" value="true" />
+      <created>1721539694172</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721539694172</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,6 +227,17 @@
     <MESSAGE value="amount reduced from one account" />
     <MESSAGE value="transfer balance option added" />
     <MESSAGE value="index page added and other codes improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="index page added and other codes improved" />
+    <MESSAGE value="check account before creating" />
+    <option name="LAST_COMMIT_MESSAGE" value="check account before creating" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.persistence.RollbackException" package="javax.persistence" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
