@@ -14,7 +14,7 @@
 <body>
 
 <%
-    long accountNumber = Long.parseLong(request.getParameter("accountNumber"));
+    long accountNumber = (long) session.getAttribute("id");
     String password = request.getParameter("password");
     double amount = Double.parseDouble(request.getParameter("amount"));
 
@@ -39,6 +39,10 @@
             out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
             out.println("<p>Thanks for using our service sir...</p>");
 
+            session.setAttribute("amount", amount);
+            session.setAttribute("balance", balance_table.getBalance());
+            response.sendRedirect("ShowBalancePage.jsp");
+
         } else {
 
             out.println("<h1>Error logging in to your account</h1>");
@@ -49,7 +53,7 @@
     } catch (Exception e) {
 
         e.printStackTrace();
-        out.println("<h1>Error in showing balance</h1>");
+        out.println("<h1>Error in adding balance</h1>");
     } finally {
         if (em != null) {
             em.close();

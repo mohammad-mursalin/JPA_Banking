@@ -21,13 +21,10 @@
         <div class = "form-div" >
 
             <form  class = "form-body" action = "DepositeMoney.jsp" method = "post">
-                    <div class="form-group">
-                        <label for="accountNumber">Account Number</label>
-                        <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
-                    </div>
+
                   div class="form-group">
                       <label for="exampleInputAmount1">Amount</label>
-                      <input type="number" name = "amount" class="form-control" id="exampleInputAmount1" placeholder="Enter amount" required>
+                      <input type="number" min="0" name = "amount" class="form-control" id="exampleInputAmount1" placeholder="Enter amount" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
