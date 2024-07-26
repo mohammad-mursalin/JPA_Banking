@@ -18,9 +18,9 @@
 
         <p style = "font-size : 22px ; font-weight : bold;">Please provide the information to sign in to your account</p><br>
 
-        <div class = "signInAccountForm" >
+        <div class = "form-div" >
 
-                    <form  class = "signIn-form-content" action = "SignInAccount.jsp">
+                    <form  class = "form-body" action = "SignInAccount.jsp">
                             <div class="form-group">
                                 <label for="accountNumber">Account Number</label>
                                 <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>

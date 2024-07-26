@@ -18,9 +18,9 @@
 
         <p style = "font-size : 22px ; font-weight : bold;">Please provide the information to create a bank account</p><br>
 
-        <div class = "createAccountForm" >
+        <div class = "form-div" >
 
-            <form  class = "CA-form-content" action = "checkAccount.jsp" method = "post">
+            <form  class = "form-body" action = "checkAccount.jsp" method = "post">
                     <div class="form-group">
                           <label for="exampleInputName1">Owner Name</label>
                           <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Name" name = "name">
