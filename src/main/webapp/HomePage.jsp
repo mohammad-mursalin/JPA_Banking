@@ -10,15 +10,15 @@
 
     <title>Form page : Home page</title>
 
-</head><%@ page contentType="text/html;charset=UTF-8" language="java" %>
-       <!DOCTYPE html>
-       <html lang="en">
-       <head>
-           <meta charset="UTF-8">
-           <title>Home Page : Banking App</title>
-
-       </head>
+</head>
        <body>
+
+            <%
+                long accNumber = (long) session.getAttribute("id");
+                String name = (String) session.getAttribute("name");
+                String email = (String) session.getAttribute("email");
+
+            %>
 
            <div class = "container">
 
@@ -32,7 +32,9 @@
 
                <div class = "content" style = "text-align: center;">
 
-                   <p style = " font-size : 26px; font-weight: bold;" >Welcome to our Bank Management System</p>
+                   <p style = " font-size : 26px; font-weight: bold;" >Welcome to our Bank Management System </p>
+
+                   <p style = " font-size : 26px; font-weight: bold;" > <%= name %> </p>
 
                    <div class = "account-activity">
 
@@ -40,13 +42,13 @@
 
                            <li class="nav-item active">
 
-                               <a class="nav-link" href="HomePage.jsp">Home <span class="sr-only">(current)</span></a>
+                               <a class="nav-link" href="ShowDetails.jsp">Show my details</a>
 
                            </li>
 
                            <li class="nav-item active">
 
-                               <a class="nav-link " href="ShowBalance.jsp">Show balance</a>
+                               <a class="nav-link " href="ShowBalanceForm.jsp">Show balance</a>
 
                            </li>
 
@@ -70,12 +72,5 @@
 
            </div>
        </body>
-       </html>
-<body>
-<div class = "container">
 
-        <%@ include file = "Navbar.jsp" %><br>
-
-    </div>
-</body>
 </html>

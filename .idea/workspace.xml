@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="check account before creating">
+    <list default="true" id="8f47d57d-f4e5-4234-81f4-74f706598dcf" name="Changes" comment="form fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mursalin/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mursalin/Balance_Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mursalin/Balance_Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CreateAccount.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkAccount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ShowBalance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ShowBalance.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ShowBalanceForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ShowBalanceForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/SignInAccount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/SignInAccount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +59,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.Tomcat: JPA_Banking.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mursalin/IdeaProjects/JPA_Banking/src/main/webapp&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Smart Tomcat.Tomcat: JPA_Banking.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/mursalin/IdeaProjects/JPA_Banking/src/main/webapp/image",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/image" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -213,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721539694172</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="form fixed">
+      <option name="closed" value="true" />
+      <created>1721970241803</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721970241803</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,7 +239,8 @@
     <MESSAGE value="transfer balance option added" />
     <MESSAGE value="index page added and other codes improved" />
     <MESSAGE value="check account before creating" />
-    <option name="LAST_COMMIT_MESSAGE" value="check account before creating" />
+    <MESSAGE value="form fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="form fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

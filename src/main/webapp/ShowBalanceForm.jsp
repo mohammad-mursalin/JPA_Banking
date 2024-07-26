@@ -23,7 +23,7 @@
                     <form  class = "form-body" action = "ShowBalance.jsp">
                             <div class="form-group">
                                 <label for="accountNumber">Account Number</label>
-                                <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
+                                <input type="number" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" min="0" maxlength="20" required>
                             </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>

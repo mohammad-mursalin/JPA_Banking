@@ -11,6 +11,8 @@
     <%
 
         session.removeAttribute("name");
+        session.removeAttribute("id");
+        session.removeAttribute("email");
         session.invalidate();
         response.sendRedirect("index.jsp");
 

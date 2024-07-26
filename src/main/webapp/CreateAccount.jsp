@@ -39,6 +39,12 @@
 
         em.getTransaction().commit();
 
+        session.setAttribute("id",account.getAcNumber());
+        session.setAttribute("name",name);
+        session.setAttribute("email",email);
+        session.setAttribute("password",password);
+        response.sendRedirect("HomePage.jsp");
+
         out.println("<h1>Account created successfully!</h1>");
         out.println("<p>Account ID: " + account.getAcNumber() + "</p>");
 

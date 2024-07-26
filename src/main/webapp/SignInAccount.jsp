@@ -36,6 +36,13 @@
         }
 
         em.getTransaction().commit();
+
+        session.setAttribute("id",accountNumber);
+        session.setAttribute("name",account.getName());
+        session.setAttribute("email",account.getEmail());
+        session.setAttribute("password",password);
+        response.sendRedirect("HomePage.jsp");
+
     } catch (Exception e) {
 
         e.printStackTrace();
