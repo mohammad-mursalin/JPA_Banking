@@ -20,12 +20,12 @@
 
         <div class = "form-div" >
 
-            <form  class = ".form-body" action = "TransferBalance.jsp" method = "post">
+            <form  class = "form-body" action = "TransferBalance.jsp" method = "post">
                     <div class="form-group">
                         <label for="accountNumber">Sender Account Number</label>
                         <input type="text" class="form-control" id="accountNumber" name="senderAccountNumber" placeholder="Enter Account Number" pattern="\d*" maxlength="20" required>
                     </div>
-                  div class="form-group">
+                  <div class="form-group">
                       <label for="exampleInputAmount1">Amount</label>
                       <input type="number" name = "amount" class="form-control" id="exampleInputAmount1" placeholder="Enter amount" required>
                   </div>

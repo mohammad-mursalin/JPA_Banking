@@ -22,7 +22,7 @@
 
             <form  class = "form-body" action = "DepositeMoney.jsp" method = "post">
 
-                  div class="form-group">
+                  <div class="form-group">
                       <label for="exampleInputAmount1">Amount</label>
                       <input type="number" min="0" name = "amount" class="form-control" id="exampleInputAmount1" placeholder="Enter amount" required>
                   </div>

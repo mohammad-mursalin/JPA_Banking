@@ -1,5 +1,5 @@
-%@ page import="com.mursalin.Accounts" %>
-%@ page import="com.mursalin.Balance_Table" %>
+<%@ page import="com.mursalin.Accounts" %>
+<%@ page import="com.mursalin.Balance_Table" %>
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import=" javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManagerFactory" %>
@@ -44,7 +44,7 @@
                     sender_balance_table.setBalance(sender_balance_table.getBalance() - amount);
                     receiver_balance_table.setBalance(receiver_balance_table.getBalance() + amount);
 
-                    out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
+                    out.println("<h1>Sir your current balance is " +sender_balance_table.getBalance()+ "</h1>");
                     out.println("<p>Thanks for using our service sir...</p>");
 
                     em.getTransaction().commit();

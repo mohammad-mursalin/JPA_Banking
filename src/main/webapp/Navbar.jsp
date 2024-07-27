@@ -41,13 +41,13 @@
 
                 <li class="nav-item active">
 
-                    <a class="nav-link" href="DepositeMoney.jsp">Deposite Money</a>
+                    <a class="nav-link" href="DepositeMoneyForm.jsp">Deposite Money</a>
 
                 </li>
 
                 <li class="nav-item active">
 
-                    <a class="nav-link " href="TransferBalance.jsp">Transfer Balance</a>
+                    <a class="nav-link " href="TransferBalanceForm.jsp">Transfer Balance</a>
 
                 </li>
 

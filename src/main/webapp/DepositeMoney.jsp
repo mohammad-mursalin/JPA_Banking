@@ -1,5 +1,5 @@
-%@ page import="com.mursalin.Accounts" %>
-%@ page import="com.mursalin.Balance_Table" %>
+<%@ page import="com.mursalin.Accounts" %>
+<%@ page import="com.mursalin.Balance_Table" %>
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import=" javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManagerFactory" %>
@@ -30,13 +30,13 @@
 
         balance_table = em.find(Balance_Table.class, accountNumber);
 
-        if (account != null && accountNumber == balance_table.getAccount_num() && password.equals(balance_table.getPassword())) {
+        if (balance_table != null && accountNumber == balance_table.getAccount_num() && password.equals(balance_table.getPassword())) {
 
             out.println("<h1>Amount " +amount+ " is added to your account</h1>");
 
             balance_table.setBalance(balance_table.getBalance()+amount);
 
-            out.println("<h1>Sir your current balance is " +balance_table.getBalance() "</h1>");
+            out.println("<h1>Sir your current balance is " +balance_table.getBalance()+ "</h1>");
             out.println("<p>Thanks for using our service sir...</p>");
 
             session.setAttribute("amount", amount);
